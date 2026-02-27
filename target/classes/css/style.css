@@ -1,0 +1,76 @@
+.root {
+    -fx-background-color: #1e1e1e;
+    -fx-font-family: "Segoe UI";
+}
+
+.title {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+}
+
+.text-field {
+    -fx-background-color: #2a2a2a;
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-border-color: #3a3a3a;
+    -fx-padding: 10;
+}
+
+.button {
+    -fx-background-color: #3b82f6;
+    -fx-text-fill: white;
+    -fx-background-radius: 12;
+    -fx-padding: 10 18;
+}
+
+.button:hover {
+    -fx-background-color: #2563eb;
+}
+
+.list-view {
+    -fx-background-color: #2a2a2a;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+}
+
+.list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #e5e5e5;
+}
+
+.list-cell:selected {
+    -fx-background-color: #3b82f6;
+    -fx-text-fill: white;
+}
+
+
+.card {
+    -fx-background-color: #2a2a2a;
+    -fx-background-radius: 16;
+    -fx-padding: 15;
+    -fx-border-radius: 16;
+    -fx-border-color: #3a3a3a;
+}
+
+.card-title {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.card-price {
+    -fx-text-fill: #22c55e;
+    -fx-font-size: 14px;
+}
+
+.delete-btn {
+    -fx-background-color: #ef4444;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+}
+
+.delete-btn:hover {
+    -fx-background-color: #dc2626;
+}

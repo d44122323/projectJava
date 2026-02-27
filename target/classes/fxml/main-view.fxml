@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.pricetracker.proekt.controller.MainController"
+      spacing="20"
+      stylesheets="@../css/style.css"
+      styleClass="root">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Отслеживание цены" styleClass="title"/>
+
+    <HBox spacing="10">
+        <TextField fx:id="urlField"
+                   promptText="Вставь ссылку на товар..."
+                   HBox.hgrow="ALWAYS"
+                   styleClass="input"/>
+        <Button text="Добавить"
+                onAction="#onAddClick"
+                styleClass="button"/>
+    </HBox>
+
+    <ProgressIndicator fx:id="loadingIndicator" visible="false"/>
+
+    <ScrollPane fitToWidth="true" styleClass="scroll">
+        <content>
+            <VBox fx:id="productContainer" spacing="15">
+                <HBox styleClass="card" spacing="15">
+                    <VBox spacing="5" HBox.hgrow="ALWAYS">
+                        <Label text="Название товара" styleClass="card-title"/>
+                        <Label text="Цена: 12 999 ₽" styleClass="card-price"/>
+                        <Label text="Последнее обновление: сейчас" styleClass="card-info"/>
+                    </VBox>
+                    <Button text="Удалить" styleClass="danger-button"/>
+                </HBox>
+            </VBox>
+        </content>
+    </ScrollPane>
+
+</VBox>
